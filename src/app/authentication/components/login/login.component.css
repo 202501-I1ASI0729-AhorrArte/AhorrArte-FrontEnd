@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+  max-width: 1400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.img-portal {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img-portal img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.form-container {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.email-field {
+  margin-bottom: 16px;
+}
+
+.btn-sigin, .forget-password {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-sigin button {
+  border-radius: 20px;
+  background: #006400;
+  color: #fff;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-toolbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #006400;
+  color: #fff;
+}
+
+.welcome {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.mat-card-title {
+  margin-bottom: 24px;
+}
+
+.title-signin {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0;
+}

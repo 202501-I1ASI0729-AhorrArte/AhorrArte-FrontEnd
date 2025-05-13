@@ -1,0 +1,160 @@
+<!-- landing-page.component.html -->
+<app-sidebar></app-sidebar>
+<!-- Hero Section -->
+<body>
+<div class="hero-section">
+  <h1 class="main-heading">Planifica todos tus ingresos en una misma plataforma</h1>
+  <p class="sub-heading">Sitio oficial de AhorrArte</p>
+  <button class="cta-button" routerLink="/signup">Regístrate</button>
+  <div class="image image-large-purple">
+    <img src="assets/images/circle-1.png" />
+  </div>
+  <div class="image image-small-green">
+    <img src="assets/images/circle-8.png" />
+  </div>
+  <div class="image image-medium-blue">
+    <img src="assets/images/circle-3.png" />
+  </div>
+  <div class="image image-large-pink">
+    <img src="assets/images/circle-4.png" />
+  </div>
+</div>
+
+<section class="more-information">
+  <div class="more-information-container">
+    <div class="know-more">CONOCE MÁS</div>
+    <div class="about-proyect">Sobre el proyecto</div>
+    <div class="line-container">
+      <img class="line-image" src="assets/images/line.png"/>
+    </div>
+    <div class="welcome">
+      <p>FinSuma busca ofrecer una solución tecnológica avanzada para el consumo responsable en el Perú.</p>
+    </div>
+    <button type="button" class="more-button" (click)="navigateToAbout()" role="link">Comenzar</button>
+  </div>
+  <div class="woman-image-container">
+    <img class="woman-image" src="assets/images/woman.png" />
+  </div>
+  <div class="capabilities-container">
+    <div class="capabilities-title">Capacidades</div>
+    <div class="capability-high-conexion">
+      <img src="assets/images/icon01.png" />
+      <div>Alta Conexión</div>
+    </div>
+    <div class="capability-share">
+      <img src="assets/images/icon02.png" />
+      <div>Compartir</div>
+    </div>
+    <div class="capability-planification">
+      <img src="assets/images/icon03.png" />
+      <div>Planificación</div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+  <div class="title">NUESTROS BENEFICIOS</div>
+  <div class="main-title">Explora todo lo que AhorrArte tiene para ofrecer</div>
+
+  <!-- Beneficio 1 -->
+  <div class="benefit-card yellow-card">
+    <div class="benefit-title">Registro de datos</div>
+    <div class="benefit-description-yellow">Registra los ingresos y egresos del usuario para luego entablar un presupuesto base.</div>
+    <div class="try-now">Try now</div>
+    <img class="icon pencil-icon" src="assets/images/pencil.png" />
+  </div>
+
+  <!-- Beneficio 2 -->
+  <div class="benefit-card green-card">
+    <div class="benefit-title">Documentación</div>
+    <div class="benefit-description">Almacena toda tu información de manera rápida y segura. Genera reportes y guarda versiones locales.</div>
+    <div class="try-now">Try now</div>
+    <img class="icon analyze-icon" src="assets/images/analize.png" />
+  </div>
+
+  <!-- Beneficio 3 -->
+  <div class="benefit-card beige-card">
+    <div class="benefit-title">Análisis de proyecciones</div>
+    <div class="benefit-description">Analiza, procesa la información recolectada y compara con la tasa de inflación, proyecciones macroeconómicas</div>
+    <div class="try-now">Try now</div>
+    <img class="icon financial-icon" src="assets/images/financial.png" />
+  </div>
+
+  <!-- Beneficio 4 -->
+  <div class="benefit-card blue-card">
+    <div class="benefit-title-blue">Supervisión a distancia</div>
+    <div class="benefit-description-blue">Recibe información completa sobre el rendimiento de tu planificación financiera mensual y anual</div>
+    <div class="try-now">Try now</div>
+  </div>
+</section>
+
+<!-- Financial Institutions Section -->
+<div class="financial-institutions-banner">
+  <h1 class="banner-title">Algunas de las entidades financieras que colaboran con AhorrArte</h1>
+  <div class="logos-container">
+    <img class="logo-main" src="assets/images/logo-bn.png" alt="Banco de la Nación" />
+  </div>
+</div>
+
+<!-- Blog Section -->
+<section class="blog-section">
+  <div class="blog-information">
+    <h2>Blog</h2>
+    <p>Síguenos en nuestras redes sociales y mantente atento a las últimas novedades</p>
+    <a routerLink="/blog" class="view-more">Ver más</a>
+  </div>
+  <div class="blog-carousel">
+    <button class="carousel-control prev" (click)="moveSlide(-1)">&#10094;</button>
+    <div class="blog-content">
+      <div class="blog-item" *ngFor="let item of blogItems">
+        <img [src]="item.image" alt="{{ item.title }}">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+    <button class="carousel-control next" (click)="moveSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+      <div class="language-selector-container">
+        <select class="language-selector">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <div class="language-selector-icon"></div>
+      </div>
+    </div>
+    <div class="newsletter-content">
+      <div class="newsletter-container">
+        <div class="newsletter-title">Suscríbete a nuestro boletín informativo</div>
+        <form (submit)="subscribe()" class="subscribe-container">
+          <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+          <button type="submit" class="subscribe-button">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a routerLink="/plans">Planes</a>
+    <a routerLink="/about-us">Saber más</a>
+    <a routerLink="/features">Beneficios</a>
+    <a routerLink="/help-service">Ayuda</a>
+    <a routerLink="/contacts">Contáctanos</a>
+    <a routerLink="/faq">FAQs</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 AhorrArte - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+  </div>
+</footer>
+</body>

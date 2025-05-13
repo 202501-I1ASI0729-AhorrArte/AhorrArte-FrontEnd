@@ -1,0 +1,52 @@
+<app-toolbar></app-toolbar>
+<div class="add-transaction-card">
+  <!-- Botón de regreso -->
+  <div class="back-button-container">
+    <button class="back-button" (click)="goBack()">← Atrás</button>
+  </div>
+  <h2 style="  font-family: 'Nunito', sans-serif;">Agregar Transacción</h2>
+
+  <!-- Producto y Precio -->
+  <div class="prod-preci">
+    <div class="field-horizontal">
+      <!-- Producto -->
+      <div class="field">
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" [(ngModel)]="producto" placeholder="Ingrese el nombre del producto" class="input-producto" />
+      </div>
+
+      <!-- Precio -->
+      <div class="field">
+        <label for="precio">Precio:</label>
+        <div class="input-precio-container">
+          <span>S/</span>
+          <input type="number" id="precio" [(ngModel)]="precio" placeholder="Ingrese el precio" class="input-precio" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detalles -->
+  <div class="prod-det">
+    <div class="field-vt">
+      <label for="detalles">Agregar Detalles:</label>
+      <textarea
+        id="detalles"
+        [(ngModel)]="detalles"
+        placeholder="Ingrese los detalles de la transacción"
+        class="input-detalles"
+        [disabled]="sinDetalles"
+      ></textarea>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sin-detalles" [(ngModel)]="sinDetalles" />
+        <label for="sin-detalles">No deseo agregar detalles</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botones del footer -->
+  <div class="footer-buttons">
+    <button class="guardar-button" (click)="guardarTransaccion()">Guardar</button>
+    <button class="regresar-button" (click)="goBack()">Regresar</button>
+  </div>
+</div>

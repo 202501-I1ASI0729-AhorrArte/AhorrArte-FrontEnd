@@ -1,0 +1,73 @@
+.educacion-financiera-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 80vh; /* Asegura que ocupe la mayor parte de la pantalla */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info-section {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.action-button {
+  width: 500px;
+  background-color: #2e7d32 !important; /* Color verde */
+  color: white !important;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-transform: none; /* Evita que el texto esté en mayúsculas */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; /* Ajusta el padding */
+  font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+}
+
+.action-button:hover {
+  background-color: #388e3c !important; /* Un tono más oscuro en hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más fuerte al hacer hover */
+}
+
+.action-button::after {
+  content: '>'; /* Flecha en el lado derecho */
+  font-size: 1.2rem;
+}
+
+.action-button-large {
+  width: 250px;
+  background-color: #388e3c !important; /* Un color un poco más oscuro para el botón más grande */
+  color: white !important;
+  margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+<div class="app-container">
+  <div class="c-toolbar">
+    <div class="pv-toolbar">
+      <div>
+        <img src="assets/logo.png" width="20%" alt="Logo AhorrArte"/>
+        <a (click)="navigateToMainPage()" style="color: white; text-decoration: none; ">
+          <h1 style="padding-left: 0.5rem; font-size: 2rem; padding-top: 0.5rem;">AHORRARTE</h1>
+        </a>
+      </div>
+      <button class="hamburger-button" (click)="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+
+  </div>
+
+  <app-sidebar *ngIf="isSidebarVisible"></app-sidebar>
+</div>

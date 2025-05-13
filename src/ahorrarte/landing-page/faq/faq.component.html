@@ -1,0 +1,98 @@
+<app-sidebar></app-sidebar>
+<!--FAQ -->
+<body>
+<div class="faq-section" style="background-image: url(assets/images/faq.png);">
+  <div class="faq-content">
+    <h1 class="faq-title">Preguntas frecuentes</h1>
+    <div class="search-box">
+      <input type="search" placeholder="Search" aria-label="Search through site content" class="search-input">
+    </div>
+  </div>
+</div>
+<!--seccion of questions-->
+<div class="faq-section-2">
+  <nav class="faq-sidebar">
+    <ul class="nav-links-2">
+      <li class="nav-item-2 active"><a routerLink="/landing">General</a></li>
+      <li class="nav-item-2"><a routerLink="/about-us">Comunidad</a></li>
+      <li class="nav-item-2"><a routerLink="/plans">Plan de Pago</a></li>
+      <li class="nav-item-2"><a routerLink="/login">Eliminar cuenta</a></li>
+    </ul>
+  </nav>
+  <div class="faq-content-2">
+    <div class="faq-item">
+      <div class="faq-question">¿Puedo cancelar mi suscripción?</div>
+      <div class="faq-answer">Sí, puedes cancelar tu suscripción en cualquier momento dentro de...</div>
+      <div class="faq-toggle" (click)="toggleFAQ(0)">+</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">¿Cuántos miembros de familia puedo registrar?</div>
+      <div class="faq-answer">Dependiendo del plan que pagues. Míralos</div>
+      <div class="faq-toggle" (click)="toggleFAQ(1)">+</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">¿Qué métodos de pago aceptan?</div>
+      <div class="faq-answer">Aceptamos todo tipo de tarjetas.</div>
+      <div class="faq-toggle" (click)="toggleFAQ(2)">+</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">¿Puedo eliminar mi cuenta?</div>
+      <div class="faq-answer">Si, cuando tu quieras.</div>
+      <div class="faq-toggle" (click)="toggleFAQ(3)">+</div>
+    </div>
+  </div>
+</div>
+
+<!-- -->
+<section class="contact-faq">
+  <div class="contact-faq-content">
+    <h2>Still have question?</h2>
+    <button onclick="location.href='#';" class="button-faq">Contact us</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+      <div class="language-selector-container">
+        <select class="language-selector">
+          <option value="es">Español</option>
+          <option value="es">English</option>
+        </select>
+        <div class="language-selector-icon"></div>
+      </div>
+    </div>
+    <div class="newsletter-content">
+      <div class="newsletter-container">
+        <div class="newsletter-title">Suscríbete a nuestro boletín informativo</div>
+        <form (submit)="subscribe()" class="subscribe-container">
+          <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+          <button type="submit" class="subscribe-button">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a routerLink="/plans">Planes</a>
+    <a routerLink="/about-us">Saber más</a>
+    <a routerLink="/features">Beneficios</a>
+    <a routerLink="/help-service">Ayuda</a>
+    <a routerLink="/contacts">Contáctanos</a>
+    <a routerLink="/faq">FAQs</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 FinSuma - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+  </div>
+</footer>
+</body>
+

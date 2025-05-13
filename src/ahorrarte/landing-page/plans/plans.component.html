@@ -1,0 +1,104 @@
+<div>
+  <app-sidebar></app-sidebar>
+</div>
+<body>
+<div class="plans-section">
+  <h1>Planes Flexibles</h1>
+  <p class="description">Puedes elegir el plan que mejor se acomode a tus necesidades. AhorrArte cuenta con tres planes de suscripción y ofrece una prueba gratuita.</p>
+  <div class="plans-container">
+
+    <!-- Plan Básico -->
+    <div class="plan-card basic">
+      <h2>Básico</h2>
+      <p class="price">S/10 <span>/mes</span></p>
+      <p class="plan-description">Perfecto para familias monoparentales</p>
+      <ul class="plan-features">
+        <li>Registrar hasta 5 usuarios</li>
+        <li>Sin analítica inteligente</li>
+        <li>Prueba gratuita por 15 días</li>
+        <li>Descarga de reportes min. 3</li>
+      </ul>
+      <button class="plan-button-basic">Empezar</button>
+    </div>
+
+    <!-- Plan Regular -->
+    <div class="plan-card regular featured">
+      <h2>Regular</h2>
+      <p class="price">S/35.85 <span>/mes</span></p>
+      <p class="plan-description">Perfecto para familias extensas</p>
+      <ul class="plan-features-regular">
+        <li>Registro de hasta 20 usuarios</li>
+        <li>Plataforma analítica inteligente</li>
+        <li>Prueba gratuita por 15 días</li>
+        <li>Foro de comunidad max 3</li>
+        <li>Descarga de reportes min. 15</li>
+      </ul>
+      <button class="plan-button-regular">Empezar</button>
+    </div>
+
+    <!-- Plan Premium -->
+    <div class="plan-card premium">
+      <h2>Premium</h2>
+      <p class="price">S/67.89 <span>/mes</span></p>
+      <p class="plan-description">Perfecto para multifamilias</p>
+      <ul class="plan-features">
+        <li>Registro ilimitado de usuarios</li>
+        <li>Plataforma analítica inteligente</li>
+        <li>Prueba gratuita por 15 días</li>
+        <li>Foro de comunidad ilimitado</li>
+        <li>Descarga ilimitada de reportes</li>
+        <li>Chat de soporte abierto 24hr</li>
+      </ul>
+      <button class="plan-button-premium">Empezar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- footer-->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+      <div class="language-selector-container">
+        <select class="language-selector">
+          <option value="es">Español</option>
+          <!-- Otras opciones -->
+        </select>
+        <div class="language-selector-icon"></div>
+      </div>
+    </div>
+
+    <div class="newsletter-content">
+      <div class="newsletter-container">
+        <div class="newsletter-title">
+          Suscríbete a nuestro boletín informativo
+        </div>
+        <form class="subscribe-container">
+          <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+          <button type="submit" class="subscribe-button">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="social-media">
+      <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a routerLink="/plans">Planes</a>
+    <a routerLink="/about-us">Saber más</a>
+    <a routerLink="/features">Beneficios</a>
+    <a routerLink="/help-service">Ayuda</a>
+    <a routerLink="/contacts">Contáctanos</a>
+    <a routerLink="/faq">FAQs</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 FinSuma - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+  </div>
+</footer>
+
+</body>

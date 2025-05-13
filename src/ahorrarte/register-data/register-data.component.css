@@ -1,0 +1,201 @@
+.back-button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #f4f4f4;
+}
+.pv-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 5rem 20% auto;
+  overflow: hidden;
+  padding: 3rem 5%;
+  font-family: 'Nunito', sans-serif;
+
+}
+.datos-ingresos-card,
+.gastos-fijos-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+.datos-ingresos-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 90%;
+}
+
+.input-ingresos {
+  display: flex;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-left: 1rem;
+
+}
+.group-input-ingresos{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+}
+#ingresos{
+  width: 9rem ;
+  margin-left: 1rem;
+  border: none;
+}
+#ingresos::after{
+  border: none;
+}
+.formato-ingresos {
+  display: flex;
+  margin-top: 1.5rem;
+
+
+}
+
+.combo-box {
+  display: flex;
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.forma-select {
+  margin: 1rem 0 0 2rem;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #437f54;
+  color: white;
+  width: 12.5rem;
+  height: 50%;
+  appearance: none;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.forma-select:hover {
+  outline: none;
+  border-color: #F7F7F7;
+  background-color: #F7F7F7;
+  color: black;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.transaction-table th {
+  background-color: #437f54;
+  color: white;
+}
+
+.ver-button {
+  background-color: #437f54;
+  color: white;
+  padding: 0.3rem 3rem;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.pagination {
+
+  max-width: 320px;
+  display: flex;
+  justify-content: space-between; /* Mantiene el contenido distribuido */
+  align-items: end;
+  margin-top: 1rem;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  margin-left: auto;
+
+}
+
+/* Alinear el Filtrado por Página a la izquierda */
+.pagination-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre los elementos de filtrado */
+  width: 100%;
+}
+
+.pagination-info select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.pagination-info span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Botones de flecha de paginación a la derecha */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre las flechas de paginación */
+}
+
+.pagination button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #437F54;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination button i {
+  font-size: 1.2rem;
+  color: #437F54;
+}
+#productos{
+  text-align: left;
+}

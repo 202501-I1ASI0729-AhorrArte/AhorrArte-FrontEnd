@@ -1,0 +1,41 @@
+.app-container {
+
+}
+
+.c-toolbar {
+  background-color: #437F54;
+  color: white;
+  padding-left: 1rem;
+  margin: 0;
+  font-size: 0.5rem;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.pv-toolbar {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  font-size: 0.5rem;
+}
+.pv-toolbar div{
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  display: inline-block;
+}
+
+.hamburger-button span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}

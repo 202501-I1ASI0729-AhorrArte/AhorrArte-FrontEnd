@@ -1,0 +1,50 @@
+<div>
+  <app-toolbar></app-toolbar> <!-- Importa el ToolbarComponent aquí -->
+</div>
+
+<div class="recommend-app">
+  <main class="main-content">
+    <section class="recommendation-section">
+      <div class="recommendation-container">
+        <div class="back-button-container">
+          <button class="back-button" (click)="goBack()">← Atrás</button>
+        </div>
+        <h2 class="section-title">Recomendar aplicación</h2>
+        <hr class="section-divider" />
+        <div class="share-link-box">
+          <p class="share-instruction">Comparte el link para recomendar nuestra aplicación y obtener recompensas:</p>
+          <div class="share-link">
+            <span class="link-text">https://usuario1/recomendar/xbeowo19/share</span>
+          </div>
+        </div>
+        <div class="rewards-box">
+          <h3 class="rewards-title">Mis recompensas son:</h3>
+          <hr class="rewards-divider" />
+          <div class="rewards-info">
+            <div class="reward-item">
+              <p class="reward-description">Este es el número de usuarios que recomendaste la aplicación:</p>
+              <div class="reward-value"></div>
+            </div>
+            <div class="reward-item">
+              <p class="reward-description">Tu recompensa es de:</p>
+              <div class="reward-value"></div>
+            </div>
+          </div>
+          <div class="user-level">
+            <img src="https://i.postimg.cc/RVXcr01y/free-user-icon-3296-thumb.png" alt="User avatar" class="user-avatar" />
+            <div class="level-info">
+              <p class="level-text">Nivel 2</p>
+              <div class="level-progress">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1640c187b08a570fd2431231f044e299896ee2798b16bc6edfa7784c6afefe92?placeholderIfAbsent=true&apiKey=02dd0833c9cc4e1c855ca8ac5fba7e53" class="level-icon" alt="Level start" />
+                <div class="progress-bar">
+                  <div class="progress-fill"></div>
+                </div>
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5498e92d70657ad3bfd2f43ad2302f6e6760fa8ce703970d4e9866fdde4fb41?placeholderIfAbsent=true&apiKey=02dd0833c9cc4e1c855ca8ac5fba7e53" class="level-icon" alt="Level end" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

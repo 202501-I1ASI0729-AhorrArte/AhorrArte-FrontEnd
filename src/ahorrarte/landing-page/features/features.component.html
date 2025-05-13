@@ -1,0 +1,156 @@
+<app-sidebar></app-sidebar>
+<body>
+<section class="features">
+  <!--Primera sección del feature-->
+  <section id="seccion-1" class="seccion-1">
+    <p>¡Desarrollo de AhorrArte por el equipo en acción!</p>
+    <h1>¿Cómo trabaja el equipo?</h1>
+    <div class="icono_play">
+      <i class="fa-solid fa-circle-play"></i>
+    </div>
+    <div class="imagen_seccion1">
+      <img src="assets/images/section1_gente_reunida.png" alt="gente_reunida">
+    </div>
+  </section>
+
+  <!--Segunda sección del feature-->
+  <section id="seccion-2" class="seccion-2">
+    <h1>Beneficios</h1>
+    <div class="beneficios">
+      <div class="seccion-2-1">
+        <i class="fa-solid fa-gear"></i>
+        <h3>Registro de datos financieros</h3>
+        <p>Registra los ingresos y egresos del usuario para luego entablar un presupuesto base.</p>
+      </div>
+      <div class="seccion-2-2">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Documentación</h3>
+        <p>Almacena toda tu información de manera rápida y segura. Genera reportes y guarda versiones locales.</p>
+      </div>
+    </div>
+    <div class="beneficios-2">
+      <div class="seccion-2-3">
+        <i class="fa-regular fa-face-smile"></i>
+        <h3>Supervisión a distancia</h3>
+        <p>Recibe información completa sobre el rendimiento de tu planificación financiera mensual y anual.</p>
+      </div>
+      <div class="seccion-2-4">
+        <i class="fa-solid fa-play"></i>
+        <h3>Análisis de proyecciones</h3>
+        <p>Analiza, procesa la información recolectada y compara con la tasa de inflación, proyecciones macroeconómicas.</p>
+      </div>
+    </div>
+  </section>
+  <!--Tercera sección del feature-->
+  <section id="seccion-3" class="seccion-3">
+
+    <div class="todo-imagen-seccion-3">
+      <div class="imagen1">
+        <img src="assets/images/section3_negra.png" alt="negra">
+      </div>
+
+      <div class="imagen2">
+        <img src="assets/images/section3_nigga.png" alt="nigga">
+      </div>
+
+      <div class="imagen3">
+        <img src="assets/images/section3_tonykross.png" alt="tonykross">
+      </div>
+
+      <div class="imagen4">
+        <img src="assets/images/section3_niniaaudifonos.png" alt="ninia">
+        <div class="texto">
+          <h1>+56%</h1>
+          <h3>Acogida positiva por el público</h3>
+          <p>Más de 56% de suscriptores señalan a AhorrArte como alternativa de solución para la gestión financiera.</p>
+        </div>
+      </div>
+
+      <div class="imagen5">
+        <img src="assets/images/section3_gringa.png" alt="gringa">
+      </div>
+
+      <div class="imagen6">
+        <img src="assets/images/section3_chicaderecha1.png" alt="section3_chicaderecha1">
+      </div>
+
+      <div class="imagen7">
+        <img src="assets/images/section3_chicaderecha2.png" alt="section3_chicaderecha2">
+      </div>
+
+      <div class="imagen8">
+        <img src="assets/images/section3_chicaderecha3.png" alt="section3_chicaderecha3">
+      </div>
+    </div>
+  </section>
+
+  <!--Cuarta sección del feature-->
+  <section id="seccion-4" class="seccion-4">
+    <div class="seccion-testimonios">
+      <div class="Tertimonios">
+        <p>Testimonios</p>
+      </div>
+      <div class="comentario actual">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p>"Gracias a AhorrArte he podido gestionar el número de gastos hormiga que realizaba y afectaba mi presupuesto base. Ahora me es posible consumir de manera más responsable sin afectar mi estabilidad."</p>
+        <p>Nombre: Camila Gutiérrez Ramos</p>
+      </div>
+    </div>
+
+    <div class="section4-imagen">
+      <img src="assets/images/section4_chica.png" alt="chica">
+    </div>
+
+    <div class="section4-imagen2">
+      <img src="assets/images/section4_papu.png" alt="papu">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="logo-section">
+        <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+        <div class="language-selector-container">
+          <select class="language-selector">
+            <option value="es">Español</option>
+            <option value="es">English</option>
+          </select>
+          <div class="language-selector-icon"></div>
+        </div>
+      </div>
+      <div class="newsletter-content">
+        <div class="newsletter-container">
+          <div class="newsletter-title">Suscríbete a nuestro boletín informativo</div>
+          <form (submit)="subscribe()" class="subscribe-container">
+            <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+            <button type="submit" class="subscribe-button">Suscríbete</button>
+          </form>
+        </div>
+      </div>
+      <div class="social-media">
+        <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+        <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+        <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a routerLink="/plans">Planes</a>
+      <a routerLink="/about-us">Saber más</a>
+      <a routerLink="/features">Beneficios</a>
+      <a routerLink="/help-service">Ayuda</a>
+      <a routerLink="/contacts">Contáctanos</a>
+      <a routerLink="/faq">FAQs</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 FinSuma - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+    </div>
+  </footer>
+</section>
+</body>
+
+

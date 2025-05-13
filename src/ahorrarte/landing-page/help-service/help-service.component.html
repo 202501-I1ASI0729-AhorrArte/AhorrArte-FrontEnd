@@ -1,0 +1,107 @@
+<app-sidebar></app-sidebar>
+<body>
+<!--Centro de ayuda-->
+<main class="Centro-de-ayuda">
+  <h1>Centro de Ayuda</h1>
+  <div class="search-box-centro">
+    <input type="text" placeholder="Necesito ayuda con ...">
+  </div>
+
+  <div class="Chart-suport">
+    <i class="fa-solid fa-headset"></i>
+    <p>Soporte por chat</p>
+  </div>
+
+  <div class="atencion24-7">
+    <i class="fa-regular fa-clock"></i>
+    <p>24-7</p>
+  </div>
+  <div class="imagen-de-mujer">
+    <img src="assets/images/CentrodeAyudaMujer.png" alt="">
+  </div>
+
+
+</main>
+<!--Sección de cositas que estan para resolver dudas-->
+<section id="cositas" class="container-main">
+  <div class="grupo-contenedor-cositas-1">
+    <div class="grupo-contenedor-cositas-1-1">
+      <i class="fa-solid fa-gear"></i>
+      <h2>Configuración</h2>
+      <p>Personalizar plataforma, adaptación del sistema, entre otros</p>
+    </div>
+
+    <div class="grupo-contenedor-cositas-1-2">
+      <i class="fa-solid fa-user-plus"></i>
+      <h2 class="cositas-h2">Foro de comunidad</h2>
+      <p>Cantidad de foros de comunidad entre familias registradas</p>
+    </div>
+
+    <div class="grupo-contenedor-cositas-1-3">
+      <i class="fa-regular fa-handshake"></i>
+      <h2>Alianza Estrategica</h2>
+      <p>Infórmate sobre las entidades financieras.</p>
+    </div>
+  </div>
+  <div class="grupo-contenedor-cositas-2">
+    <div class="grupo-contenedor-cositas-2-1">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h2>Seguridad</h2>
+      <p>Cambio de contraseña, eliminación de cuenta, copia de respaldo.</p>
+    </div>
+
+    <div class="grupo-contenedor-cositas-2-2">
+      <i class="fa-regular fa-credit-card"></i>
+      <h2>Medio de pago</h2>
+      <p>Elección de tarjeta de débito o crédito, cambiar el método de pago.</p>
+    </div>
+
+    <div class="grupo-contenedor-cositas-2-3">
+      <i class="fa-solid fa-info"></i>
+      <h2>Otros</h2>
+      <p>Resuelve dudas adicionales que tengas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+      <div class="language-selector-container">
+        <select class="language-selector">
+          <option value="es">Español</option>
+          <option value="es">English</option>
+        </select>
+        <div class="language-selector-icon"></div>
+      </div>
+    </div>
+    <div class="newsletter-content">
+      <div class="newsletter-container">
+        <div class="newsletter-title">Suscríbete a nuestro boletín informativo</div>
+        <form (submit)="subscribe()" class="subscribe-container">
+          <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+          <button type="submit" class="subscribe-button">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a routerLink="/plans">Planes</a>
+    <a routerLink="/about-us">Saber más</a>
+    <a routerLink="/features">Beneficios</a>
+    <a routerLink="/help-service">Ayuda</a>
+    <a routerLink="/contacts">Contáctanos</a>
+    <a routerLink="/faq">FAQs</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 FinSuma - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+  </div>
+</footer>
+</body>

@@ -1,0 +1,212 @@
+.recommend-app {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.recommendation-section {
+  flex: 2;
+  padding: 27px 1px 1px 132px;
+}
+
+.recommendation-container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 27px 80px 73px 19px;
+}
+
+.back-button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #f4f4f4;
+}
+
+.section-title {
+  color: #000;
+  font: 700 30px/2 Nunito, sans-serif;
+  margin-left: 15px;
+}
+
+.section-divider {
+  width: 100%;
+  border-bottom: 2px solid #757575;
+  margin-bottom: 12px;
+}
+
+.share-link-box {
+  background-color: rgba(251, 251, 251, 0.77);
+  border: 1px solid rgba(57, 57, 57, 0.36);
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 1px;
+  margin-bottom: 22px;
+  padding: 6px 96px 20px;
+}
+
+.share-instruction {
+  color: #000;
+  font: 500 23px/1 Nunito, sans-serif;
+  margin-bottom: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.share-link {
+  background-color: #437f54;
+  border-radius: 25px;
+  color: #fff;
+  padding: 15px 25px;
+  font: 400 20px/22px Nunito, sans-serif;
+  text-align: center;
+}
+
+.rewards-box {
+  background-color: #fff;
+  border: 1px solid rgba(57, 57, 57, 0.36);
+  border-radius: 20px;
+  margin-top: 15px;
+  padding: 10px 40px 20px;
+}
+
+.rewards-title {
+  color: #000;
+  font: 700 23px/3 Nunito, sans-serif;
+  margin: auto;
+}
+
+.rewards-divider {
+  border: 2px solid #757575;
+  width: 323px;
+  margin-bottom: 33px;
+  margin-left: 0px;
+}
+
+.rewards-info {
+  background-color: rgba(251, 251, 251, 0.77);
+  border: 1px solid rgba(57, 57, 57, 0.36);
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 23px 21px;
+  font: 500 19px Nunito, sans-serif;
+  color: #000;
+}
+
+.reward-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.reward-value {
+  background-color: #dfdfdf;
+  border: 1px solid #bababa;
+  border-radius: 6px;
+  width: 65px;
+  height: 33px;
+}
+
+.user-level {
+  display: flex;
+  margin-top: 27px;
+}
+
+.user-avatar {
+  width: 196px;
+  height: 224px;
+  object-fit: cover;
+  filter: invert(28%) sepia(47%) saturate(3000%) hue-rotate(105deg) brightness(70%);
+}
+
+.level-info {
+  margin-left: 20px;
+}
+
+.level-text {
+  color: #000;
+  font: 700 31px/1 Nunito, sans-serif;
+  margin-bottom: 17px;
+}
+
+.level-progress {
+  display: flex;
+  align-items: center;
+}
+
+.level-icon {
+  width: 96px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.progress-bar {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  height: 24px;
+  width: 304px;
+  margin: 0 10px;
+}
+
+.progress-fill {
+  background-color: #4d6443;
+  border-radius: 10px;
+  height: 100%;
+  width: 70%;
+}
+
+
+@media (max-width: 991px) {
+
+  .section-title {
+    margin-left: 10px;
+  }
+
+  .recommendation-container {
+    padding: 27px 20px 73px;
+  }
+
+  .share-link-box,
+  .rewards-info {
+    padding: 20px;
+  }
+
+  .rewards-divider {
+    max-width: 100%;
+  }
+
+  .user-level {
+    flex-direction: column;
+  }
+
+  .level-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+}

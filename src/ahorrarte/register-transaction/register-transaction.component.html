@@ -1,0 +1,56 @@
+<app-toolbar></app-toolbar>
+<div class="pv-card">
+  <!-- Encabezado del Card -->
+  <div class="back-button-container">
+    <button class="back-button" (click)="goBack()">← Atrás</button>
+  </div>
+  <h2 class="register-style">Registro de Transacciones:</h2>
+
+  <!-- Input de búsqueda -->
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar" [(ngModel)]="search" />
+    <i class="pi pi-search"></i>
+  </div>
+
+  <!-- Tabla de Transacciones -->
+  <table class="transaction-table">
+    <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Detalles</th>
+      <th>Ver</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of filteredTransactions; let index = index">
+      <td id="productos">{{ item.product }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.details }}</td>
+      <td><button class="view-button">Ver</button></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Paginación -->
+  <div class="pagination">
+    <div class="pagination-info">
+      <span>Filas por página</span>
+      <select [(ngModel)]="rowsPerPage" (change)="handleRowsPerPageChange($event)">
+        <option *ngFor="let n of [4, 10, 20]" [value]="n">{{ n }}</option>
+      </select>
+      <span>{{ startRow }} - {{ endRow }} de {{ totalTransactions }}</span>
+    </div>
+
+    <div class="pagination-controls">
+      <button (click)="prevPage()"><i class="pi pi-angle-left"> < </i></button>
+      <button (click)="nextPage()"><i class="pi pi-angle-right"> > </i></button>
+    </div>
+  </div>
+
+  <!-- Pie del Card -->
+  <div class="footer-buttons">
+    <button class="add-button">+ Agregar transacción</button>
+    <button class="delete-button">- Eliminar transacción</button>
+  </div>
+</div>

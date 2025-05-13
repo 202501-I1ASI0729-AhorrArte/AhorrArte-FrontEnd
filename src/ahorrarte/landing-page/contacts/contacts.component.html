@@ -1,0 +1,102 @@
+<app-sidebar></app-sidebar>
+<body>
+<div class="contact-section" style="background-image: url('assets/images/fondito.png');">
+  <div class="contact-content">
+    <div class="contact-form">
+      <h1>Contacto</h1>
+      <form action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+        </div>
+        <div class="form-group">
+          <label for="message">¿Cómo podemos ayudarte?</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+    </div>
+
+    <div class="contact-image">
+      <img src="https://assets-global.website-files.com/6461f2c434f48e71dcbe84bb/649bdb639bc7c6dc475f40cf_Stage_Image2-p-500.png" alt="Imagen de contacto">    </div>
+  </div>
+</div>
+
+<div class="contact-info">
+  <div class="contact-tittle">
+    <h2>Ponte en contacto en cualquier momento</h2>
+  </div>
+  <div class="contact-details">
+    <div class="contact-column">
+      <strong>Correo electrónico:</strong>
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:finsuma@gmail.com">finsuma&#64;gmail.com</a>
+      </p>
+      <hr>
+    </div>
+    <div class="contact-column">
+      <strong>Teléfono:</strong>
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+11234567893">+1 (123) 456-7893</a>
+      </p>
+      <hr>
+    </div>
+    <div class="contact-column">
+      <strong>Dirección:</strong>
+      <p>
+        <i class="fas fa-map-marker-alt"></i>
+        Lima - Perú
+      </p>
+      <hr>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+      <div class="language-selector-container">
+        <select class="language-selector">
+          <option value="es">Español</option>
+          <option value="es">English</option>
+        </select>
+        <div class="language-selector-icon"></div>
+      </div>
+    </div>
+    <div class="newsletter-content">
+      <div class="newsletter-container">
+        <div class="newsletter-title">Suscríbete a nuestro boletín informativo</div>
+        <form (submit)="subscribe()" class="subscribe-container">
+          <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+          <button type="submit" class="subscribe-button">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a routerLink="/plans">Planes</a>
+    <a routerLink="/about-us">Saber más</a>
+    <a routerLink="/features">Beneficios</a>
+    <a routerLink="/help-service">Ayuda</a>
+    <a routerLink="/contacts">Contáctanos</a>
+    <a routerLink="/faq">FAQs</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 FinSuma - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+  </div>
+</footer>
+</body>

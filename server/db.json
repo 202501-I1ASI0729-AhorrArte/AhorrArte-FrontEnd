@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "username": "JohnDoe",
+      "email": "jhon@gmail.com",
+      "password": "123456",
+      "id": "1"
+    },
+    {
+      "username": "juan",
+      "email": "juan123@gmail.com",
+      "password": "juan123",
+      "id": "2"
+    },
+    {
+      "username": "jose",
+      "email": "jose123@gmail.com",
+      "password": "jose123",
+      "id": "3"
+    },
+    {
+      "username": "admin",
+      "email": "admin123@gmail.com",
+      "password": "admin123",
+      "id": "4"
+    },
+    {
+      "id": "e2f9",
+      "username": "nato",
+      "email": "renatoreyes_8@hotmail.com",
+      "password": "renatorey16"
+    }
+  ]
+}

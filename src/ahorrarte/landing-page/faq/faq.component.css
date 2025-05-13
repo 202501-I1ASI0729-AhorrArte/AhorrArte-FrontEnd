@@ -1,0 +1,281 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  height: 100%;
+
+}
+
+/**/
+.faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  margin-top: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 384px;
+}
+
+.faq-content {
+  text-align: center;
+}
+
+.faq-title {
+  color: white;
+  font-size: 60px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  line-height: 74px;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.search-box-faq {
+  position: relative;
+  margin-top: 0;
+}
+
+.search-input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 400px;
+}
+
+.search-input:focus{
+  color: #333;
+}
+.search-input::placeholder {
+  opacity: 1;
+}
+
+.search-input:focus::placeholder {
+  color: #bbb;
+}
+
+/**/
+.faq-section-2 {
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  height: 70%;
+  margin:20px;
+}
+
+.faq-sidebar {
+  width: 25%;
+}
+
+.nav-links-2 {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item-2 a {
+  display: block;
+  padding: 20px ;
+  background: white;
+  border: 1px solid #9095A0;
+  border-radius: 30px;
+  color: #9095A0;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 50%;
+  margin-left: 120px;
+
+}
+
+.active a {
+  background: #437F54;
+  color: white;
+}
+
+.faq-content-2 {
+  width: 55%;
+  padding: 1rem;
+  margin-left: 100px;
+}
+
+.faq-item {
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px solid #DEE1E6;
+}
+
+.faq-question {
+  color: #323842;
+  font-size: 22px;
+  font-family: Montserrat, sans-serif;
+}
+
+.faq-answer {
+  color: #4D4D4D;
+  font-size: 20px;
+  font-family: Nunito, sans-serif;
+  display: none;
+  margin: 20px 4px;
+}
+
+.faq-toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #437F54;
+  color: white;
+  border-radius: 18px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+/*FAQ 2*/
+.contact-faq-content {
+  box-sizing: border-box;
+  width: 70%;
+  padding: 20px;
+  background-color: #EDDDB0;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+}
+
+.contact-faq{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.contact-faq h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68px;
+  word-wrap: break-word
+}
+
+.button-faq {
+  background-color: #437F54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.button-faq:hover {
+  background-color: #729486;
+}
+
+
+/*FOOTER*/
+.footer {
+  background-color: #437F54;
+  color: white;
+  padding: 20px 50px;
+
+}
+.footer-content {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+}
+.footer-content .logo-section,.newsletter-content, .footer-content .newsletter, .footer-content .social-media {
+  display: flex;
+  align-items: center;
+}
+
+
+.newsletter-container {
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 22px;
+}
+
+.newsletter-title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subscribe-container {
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.subscribe-input {
+  flex-grow: 1;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.subscribe-button {
+  background-color: #7ABD8D;
+  color: white;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer-content .social-media img {
+  margin: 0 5px;
+}
+.footer-links {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer-links a{
+  color: white;
+  text-decoration:none;
+  margin: 0 15px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration:none;
+  margin: 0 10px;
+}
+.footer-links a:hover {
+  text-decoration:underline;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0px;
+  color: white;
+  border-top: 1px solid white;
+}
+.footer-bottom p {
+  margin: 0;
+  color: white;
+}

@@ -1,0 +1,176 @@
+<app-sidebar></app-sidebar>
+<body>
+<section class="more-information">
+  <div class ="more-information-container">
+    <div class ="know-more">CONOCE MÁS</div>
+    <div class="about-proyect">Sobre el proyecto</div>
+    <div class="line-container">
+      <img class="line-image" src="assets/images/line.png" />
+    </div>
+    <div class="welcome"><p>FinSuma busca ofrecer una solución
+      tecnológica avanzada para el consumo responsable en el Perú.</p></div>
+    <div>
+      <button type="button" class="more-button" (click)="navigateToLogin()" role="link">Comenzar</button>
+    </div>
+  </div>
+  <div class="woman-image-container">
+    <img class="woman-image" src="assets/images/woman.png" />
+  </div>
+  <div class="capabilities-container">
+    <div class="capabilities-title">Capacidades</div>
+    <div class="capability-high-conexion">
+      <img src="assets/images/icon01.png" />
+      <div>Alta Conexión</div>
+    </div>
+    <div class="capability-share">
+      <img src="assets/images/icon02.png" />
+      <div>Compartir</div>
+    </div>
+    <div class="capability-planification">
+      <img src="assets/images/icon03.png" />
+      <div>Planificación</div>
+    </div>
+  </div>
+</section>
+
+<!--Proyect-->
+<section class="project-section">
+  <div class="container">
+    <div class="content">
+      <div class="left-content">
+        <div><h1 class="header">Sobre <br> el proyecto</h1></div>
+        <img src="assets/images/proyect.png" alt="Equipo trabajando">
+      </div>
+      <div class="right-content">
+        <div>
+          <p class="right-parr">AhorrArte es una plataforma dirigida a los jefes del hogar en los niveles económicos D y E en Perú. Esta herramienta innovadora utiliza proyecciones macroeconómicas del Banco de la Nación para permitir una planificación precisa del presupuesto familiar.</p>
+        </div>
+        <div class="row-card">
+          <div class="card01">
+            <div class="card01-content">
+              <div class="content-card01">
+                <div class="info-card01">
+                  <div class="card-header">Suscriptores</div>
+                  <div class="card-main">23,000</div>
+                </div>
+                <div class="icon-card">
+                  <img src="assets/images/carita.png" alt="WhatsApp Icon">
+                </div>
+              </div>
+              <div class="card-footer">▲ 5.39% periodo de cambio</div>
+            </div>
+          </div>
+          <div class="card02">
+            <div class="card02-content">
+              <div class="content-card02">
+                <div class="icon-card-02">
+                  <img src="assets/images/red.png" alt="WhatsApp Icon">
+                </div>
+                <div class="card-title">+123K</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-card-02">
+          <div class="card03">
+            <div class="card03-content">
+              <div class="content-card03">
+                <div class="icon-card-03">
+                  <img src="assets/images/carrito.png" alt="WhatsApp Icon">
+                </div>
+                <div class="card-title-03">+56.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--team -->
+<section class="team-section">
+  <div class="team-overlay">
+    <h3>NUESTRO EQUIPO</h3>
+    <h2 class="team-heading">EL EQUIPO CREADOR DE AHORRARTE</h2>
+    <div class="team-members">
+      <article class="team-member">
+        <img src="assets/images/Andres.jpg" alt="Andres Rodriguez" class="team-image" >
+        <div class="team-member-description">
+          <h3>Andres Rodriguez</h3>
+          <p>Ingeniería de Software</p>
+        </div>
+      </article>
+      <article class="team-member">
+        <img src="assets/images/Camila.png" alt="Camila Reyes" class="team-image">
+        <div  class="team-member-description">
+          <h3>Camila Reyes</h3>
+          <p>Ingeniería de Software</p>
+        </div>
+      </article>
+      <article class="team-member">
+        <img src="assets/images/Gabriel.jpg" alt="Gabriel Rivera" class="team-image">
+        <div  class="team-member-description">
+          <h3>Gabriel Rivera</h3>
+          <p>Ingeniería de Software</p>
+        </div>
+      </article>
+      <article class="team-member">
+        <img src="assets/images/Paolo.jpeg" alt="Paolo Padilla" class="team-image">
+        <div  class="team-member-description">
+          <h3>Paolo Padilla</h3>
+          <p>Ingeniería de Software</p>
+        </div>
+      </article>
+      <article class="team-member">
+        <img src="assets/images/luis.png" alt="Luis Cisneros" class="team-image">
+        <div  class="team-member-description">
+          <h3>Luis Cisneros</h3>
+          <p>Ingeniería de software</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="assets/images/logo-footer.png" alt="AhorrArte Logo" style="height: 50px;">
+      <div class="language-selector-container">
+        <select class="language-selector">
+          <option value="es">Español</option>
+          <option value="es">English</option>
+        </select>
+        <div class="language-selector-icon"></div>
+      </div>
+    </div>
+    <div class="newsletter-content">
+      <div class="newsletter-container">
+        <div class="newsletter-title">Suscríbete a nuestro boletín informativo</div>
+        <form (submit)="subscribe()" class="subscribe-container">
+          <input type="email" class="subscribe-input" placeholder="Escribe tu correo" required>
+          <button type="submit" class="subscribe-button">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="https://twitter.com/?lang=es"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      <a href="https://web.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook"></a>
+      <a href="https://pe.linkedin.com/"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a routerLink="/plans">Planes</a>
+    <a routerLink="/about-us">Saber más</a>
+    <a routerLink="/features">Beneficios</a>
+    <a routerLink="/help-service">Ayuda</a>
+    <a routerLink="/contacts">Contáctanos</a>
+    <a routerLink="/faq">FAQs</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 FinSuma - <a href="https://estudiante.upc.edu.pe/public">Privacidad</a> - <a href="https://estudiante.upc.edu.pe/public">Términos</a> - <a href="https://estudiante.upc.edu.pe/public">Sitemap</a></p>
+  </div>
+</footer>
+</body>

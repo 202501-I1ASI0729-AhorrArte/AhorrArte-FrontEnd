@@ -1,0 +1,17 @@
+<div>
+  <app-toolbar></app-toolbar>
+</div>
+<div class="home-container">
+  <div class="welcome-section">
+    <h1>Hola {{ userName }}, bienvenido a AhorrArte!</h1>
+    <p>Explora una de las funcionalidades</p>
+    <img class="welcome-image" src="assets/dante.jpg" alt="Foto de Dante">
+  </div>
+
+  <div class="button-container">
+    <button mat-raised-button color="primary" class="action-button" [routerLink]="['/register-transaction']">Registro de Transacciones</button>
+    <button mat-raised-button color="primary" class="action-button" [routerLink]="['/register-data']">Registro de Datos Financieros</button>
+    <button mat-raised-button color="primary" class="action-button" [routerLink]="['/']">Generador de reportes</button>
+    <button mat-raised-button color="primary" class="action-button" [routerLink]="['/educacion-financiera']">Educación Financiera</button>
+  </div>
+</div>
