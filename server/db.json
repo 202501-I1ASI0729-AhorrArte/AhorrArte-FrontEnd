@@ -29,6 +29,14 @@
       "username": "nato",
       "email": "renatoreyes_8@hotmail.com",
       "password": "renatorey16"
+    },
+    {
+      "id": "e153",
+      "username": "Luis",
+      "password": "1234",
+      "roles": [
+        "ROLE_USER"
+      ]
     }
   ]
 }

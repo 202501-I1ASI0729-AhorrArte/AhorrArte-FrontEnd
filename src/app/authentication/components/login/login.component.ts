@@ -62,15 +62,19 @@ export class LoginComponent {
     const { username, password } = this.loginForm.value;
 
     this.authService.loginUser({ username, password }).subscribe({
-      next: (response) => {
-        console.log('Respuesta del servidor:', response);
-        sessionStorage.setItem('token', response.token);
-        sessionStorage.setItem('username', response.username);
-        this.router.navigate(['/home']);
+      next: (users) => {
+        if (users.length > 0) {
+          const user = users[0];
+          sessionStorage.setItem('token', 'fake-jwt-token');
+          sessionStorage.setItem('username', user.username);
+          this.router.navigate(['/home']);
+        } else {
+          this.errorMessage = 'Credenciales inválidas. Intenta de nuevo.';
+        }
       },
       error: (error) => {
         console.error('Error al iniciar sesión:', error);
-        alert('Credenciales inválidas. Intenta de nuevo.');
+        this.errorMessage = 'Error al conectar con el servidor.';
       }
     });
   }
