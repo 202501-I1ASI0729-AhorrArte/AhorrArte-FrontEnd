@@ -109,7 +109,7 @@ body{
 .texto {
   position: absolute;
   top:  215%;
-  left: 500px;
+  left: 1050px;
   width: 360px;
   height: 100px;
   text-align: center;
@@ -181,9 +181,7 @@ body{
   margin-left: 20px;
 }
 
-.todo-imagen-seccion-3 .imagen4{
-  margin-top: 100px;
-}
+.todo-imagen-seccion-3 .imagen4,
 .todo-imagen-seccion-3 .imagen5{
   width: 100px;
   height: 100px;

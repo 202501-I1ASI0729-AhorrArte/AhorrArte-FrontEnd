@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:AhorrArte-FrontEnd": "node dist/ahorrarte-front-end/server/server.mjs",
-    "start:api": "json-server --watch server/db.json --port 4000"
+    "serve:ssr:AhorrArte-FrontEnd": "node dist/ahorrarte-front-end/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -40,13 +39,11 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
     "jasmine-core": "~5.2.0",
-    "json-server": "^1.0.0-beta.3",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "rollup": "^4.40.2",
     "typescript": "~5.5.2"
   }
 }

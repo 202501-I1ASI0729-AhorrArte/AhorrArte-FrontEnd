@@ -64,7 +64,7 @@ body {
 
 .cta-button {
   left: 48%;
-  top: 68%;
+  top: 58%;
   background: white;
   border-radius: 26px;
   color: #171A1F;
@@ -96,7 +96,7 @@ body {
 .image-large-purple {
   width: 230px;
   height: 230px;
-  left: 200px;
+  left: 270px;
   top: 225px;
   background: #D6D3ED;
 }
@@ -120,8 +120,8 @@ body {
 .image-medium-blue {
   width: 120px;
   height: 120px;
-  left: 26px;
-  top: 442px;
+  left: 36px;
+  top: 472px;
   background: #D0EBF6;
   box-shadow: 0 0 1px rgba(23, 26, 31, 0.15);
 }
@@ -129,8 +129,8 @@ body {
 .image-large-pink {
   width: 160px;
   height: 160px;
-  left: 420px;
-  top: 400px;
+  left: 550px;
+  top: 462px;
   background: #FFDFF1;
   box-shadow: 0 0 1px rgba(23, 26, 31, 0.15);
 }
@@ -160,14 +160,13 @@ body {
 }
 
 /*More information*/
-
+/*More information*/
 .more-information {
   width: 100%;
   height: 80%;
-  left: -5%;
+  left: 13%;
   position: relative;
-  background: #ffffff;
-  top: 10px;
+  background: white;
 }
 
 .more-button {
@@ -370,13 +369,12 @@ body {
 
 /*BENEFITS SECTION*/
 .benefits {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  left: -8%;
+  left: 13%;
   position: relative;
-  background: #ffffff;
+  background: white;
   margin-bottom: 200px;
-  top: 30px;
 }
 
 
@@ -715,4 +713,5 @@ body {
   margin: 0;
   color: white;
 }
+
 

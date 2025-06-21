@@ -5,19 +5,19 @@ import {TasaCrediticiaComponent} from "./public/pages/tasa-crediticia/tasa-credi
 import {SignupComponent} from "./authentication/components/signup/signup.component";
 import {LoginComponent} from "./authentication/components/login/login.component";
 import {NgModule} from "@angular/core";
-import {AddTransactionComponent} from "../ahorrarte/add-transaction/add-transaction.component";
-import {RegisterDataComponent} from "../ahorrarte/register-data/register-data.component";
-import {RegisterTransactionComponent} from "../ahorrarte/register-transaction/register-transaction.component";
-import {AppRecomendationComponent} from "../ahorrarte/app-recomendation/app-recomendation.component";
-import {ClientServiceComponent} from "../ahorrarte/client-service/client-service.component";
-import {PlanSubscriptionComponent} from "../ahorrarte/plan-subscription/plan-subscription.component";
-import {LandingPageComponent} from "../ahorrarte/landing-page/landing-page.component";
-import {AboutUsComponent} from "../ahorrarte/landing-page/about-us/about-us.component";
-import {PlansComponent} from "../ahorrarte/landing-page/plans/plans.component";
-import {FaqComponent} from "../ahorrarte/landing-page/faq/faq.component";
-import {HelpServiceComponent} from "../ahorrarte/landing-page/help-service/help-service.component";
-import {FeaturesComponent} from "../ahorrarte/landing-page/features/features.component";
-import {ContactsComponent} from "../ahorrarte/landing-page/contacts/contacts.component";
+import {AddTransactionComponent} from "../AhorrArte/add-transaction/add-transaction.component";
+import {RegisterDataComponent} from "../AhorrArte/register-data/register-data.component";
+import {RegisterTransactionComponent} from "../AhorrArte/register-transaction/register-transaction.component";
+import {AppRecomendationComponent} from "../AhorrArte/app-recomendation/app-recomendation.component";
+import {ClientServiceComponent} from "../AhorrArte/client-service/client-service.component";
+import {PlanSubscriptionComponent} from "../AhorrArte/plan-subscription/plan-subscription.component";
+import {LandingPageComponent} from "../AhorrArte/landing-page/landing-page.component";
+import {AboutUsComponent} from "../AhorrArte/landing-page/about-us/about-us.component";
+import {PlansComponent} from "../AhorrArte/landing-page/plans/plans.component";
+import {FaqComponent} from "../AhorrArte/landing-page/faq/faq.component";
+import {HelpServiceComponent} from "../AhorrArte/landing-page/help-service/help-service.component";
+import {FeaturesComponent} from "../AhorrArte/landing-page/features/features.component";
+import {ContactsComponent} from "../AhorrArte/landing-page/contacts/contacts.component";
 
 export const routes: Routes = [
   { path: 'landing', component: LandingPageComponent},

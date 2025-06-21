@@ -7,19 +7,19 @@ import { User } from '../../authentication/interfaces/auth';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:4000/users';
+  private baseUrl = 'http://172.211.129.172:8080/api/v1/authentication';
 
   constructor(private http: HttpClient) {}
 
+  // Método para registrar un usuario (sign-up)
   registerUser(userDetails: User): Observable<any> {
-    return this.http.post(`${this.baseUrl}`, userDetails);
+    return this.http.post(`${this.baseUrl}/sign-up`, userDetails);
   }
 
 
-
+  // Método para iniciar sesión (sign-in)
   loginUser(credentials: { username: string; password: string }): Observable<any> {
-    const { username, password } = credentials;
-    return this.http.get<any[]>(`${this.baseUrl}?username=${username}&password=${password}`);
+    return this.http.post(`${this.baseUrl}/sign-in`, credentials);
   }
 
 
