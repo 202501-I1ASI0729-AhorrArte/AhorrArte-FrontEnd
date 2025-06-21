@@ -61,23 +61,22 @@ export class SignupComponent {
     return this.registerForm.controls['password'];
   }
 
-  submitDetails() {
-    const postData = { ...this.registerForm.value };
+  submitDetails() {    const postData = { ...this.registerForm.value };
 
     // Asegurar que roles sea un array válido
     postData.roles = Array.isArray(postData.roles) ? postData.roles : [postData.roles || 'ROLE_USER'];
 
-    this.authService.registerUser(postData as User).subscribe(
-      response => {
+    this.authService.registerUser(postData as User).subscribe({
+      next: (response) => {
         console.log('Usuario registrado:', response);
-        alert('Usuario registrado correctamente');
+        alert(`Usuario registrado correctamente con ID: ${response.id}`);
         this.router.navigate(['/home']);
       },
-      error => {
+      error: (error) => {
         console.error('Error al registrar usuario:', error);
         alert('Hubo un error al registrar el usuario. Intente nuevamente.');
       }
-    );
+    });
   }
 
 

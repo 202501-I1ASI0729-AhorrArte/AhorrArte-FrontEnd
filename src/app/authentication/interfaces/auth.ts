@@ -1,6 +1,18 @@
 export interface User {
-  id: string;
+  id?: number;
   username: string;
-  email: string;
   password: string;
+  roles: string[];
+}
+
+export interface UserResponse {
+  id: number;
+  username: string;
+  roles: string[];
+}
+
+export interface SignInResponse {
+  id: number;
+  username: string;
+  token: string;
 }
