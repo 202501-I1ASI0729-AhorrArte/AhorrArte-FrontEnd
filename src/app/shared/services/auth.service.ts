@@ -7,7 +7,7 @@ import { User, UserResponse, SignInResponse } from '../../authentication/interfa
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://172.211.129.172:8080/api/v1/authentication';
+  private baseUrl = 'https://ahorrarte-backend.onrender.com/api/v1/authentication';
 
   constructor(private http: HttpClient) {}
   // Método para registrar un usuario (sign-up)

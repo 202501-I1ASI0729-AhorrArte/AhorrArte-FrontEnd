@@ -3,7 +3,7 @@ import {FormBuilder, ReactiveFormsModule, Validators} from "@angular/forms";
 import {AuthService} from "../../../shared/services/auth.service";
 import {Router, RouterLink} from "@angular/router";
 
-import {User} from "../../interfaces/auth";
+import {User, UserResponse} from "../../interfaces/auth";
 import {MatCard, MatCardActions, MatCardContent, MatCardTitle} from "@angular/material/card";
 import {MatFormField} from "@angular/material/form-field";
 import {MatIcon} from "@angular/material/icon";
@@ -64,15 +64,13 @@ export class SignupComponent {
   submitDetails() {    const postData = { ...this.registerForm.value };
 
     // Asegurar que roles sea un array válido
-    postData.roles = Array.isArray(postData.roles) ? postData.roles : [postData.roles || 'ROLE_USER'];
-
-    this.authService.registerUser(postData as User).subscribe({
-      next: (response) => {
+    postData.roles = Array.isArray(postData.roles) ? postData.roles : [postData.roles || 'ROLE_USER'];    this.authService.registerUser(postData as User).subscribe({
+      next: (response: UserResponse) => {
         console.log('Usuario registrado:', response);
         alert(`Usuario registrado correctamente con ID: ${response.id}`);
         this.router.navigate(['/home']);
       },
-      error: (error) => {
+      error: (error: any) => {
         console.error('Error al registrar usuario:', error);
         alert('Hubo un error al registrar el usuario. Intente nuevamente.');
       }
