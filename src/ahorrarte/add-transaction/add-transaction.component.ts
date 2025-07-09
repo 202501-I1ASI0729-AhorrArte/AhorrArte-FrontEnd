@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'; // Asegúrate de tener este también
 import {ToolbarComponent} from "../../shared/components/toolbar/toolbar.component";
+import { TransactionService, UserTransaction } from "../../app/shared/services/transaction.service";
 
 @Component({
   selector: 'app-add-transaction',
@@ -17,14 +18,34 @@ export class AddTransactionComponent {
   detalles = '';
   sinDetalles = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private transactionService: TransactionService) {}
 
   guardarTransaccion() {
-    // Lógica para guardar la transacción
-    console.log('Transacción guardada:', {
-      producto: this.producto,
-      precio: this.precio,
-      detalles: this.sinDetalles ? 'Sin detalles' : this.detalles
+    // Crear objeto de transacción para la API
+    const transaction = {
+      amount: this.precio,
+      description: this.sinDetalles ? 'Sin detalles' : this.detalles,
+      category: this.producto
+    };
+
+    this.transactionService.createTransaction(transaction).subscribe({
+      next: (response) => {
+        console.log('Transacción guardada exitosamente:', response);
+        alert('Transacción guardada correctamente');
+        // Limpiar formulario
+        this.producto = '';
+        this.precio = 0;
+        this.detalles = '';
+        this.sinDetalles = false;
+      },
+      error: (error) => {
+        console.error('Error al guardar transacción:', error);
+        if (error.status === 401 || error.status === 403) {
+          alert('Sesión expirada. Por favor inicie sesión nuevamente.');
+        } else {
+          alert('Error al guardar la transacción. Por favor intente nuevamente.');
+        }
+      }
     });
   }
 

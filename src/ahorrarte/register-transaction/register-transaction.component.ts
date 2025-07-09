@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {ToolbarComponent} from "../../shared/components/toolbar/toolbar.component";
+import { TransactionService, UserTransaction } from "../../app/shared/services/transaction.service";
 
 @Component({
   selector: 'app-register-transaction',
@@ -10,17 +11,56 @@ import {ToolbarComponent} from "../../shared/components/toolbar/toolbar.componen
   standalone: true,
   imports: [CommonModule, FormsModule, ToolbarComponent]
 })
-export class RegisterTransactionComponent {
+export class RegisterTransactionComponent implements OnInit {
   search = '';
   rowsPerPage = 4;
   currentPage = 1;
+  apiTransactions: UserTransaction[] = [];
+  isLoading = false;
 
-  transactions = [
+  // Mantener datos de fallback por si falla la API
+  fallbackTransactions = [
     { product: "Mercado", price: "S/ 120", details: "Ninguno" },
     { product: "Útiles de aseo", price: "S/ 120", details: "Ninguno" },
     { product: "Útiles escolares", price: "S/ 120", details: "Ninguno" },
     { product: "Recargas", price: "S/ 120", details: "Ninguno" },
   ];
+
+  constructor(private transactionService: TransactionService) {}
+
+  ngOnInit() {
+    this.loadTransactions();
+  }
+
+  loadTransactions() {
+    this.isLoading = true;
+    this.transactionService.getUserTransactions().subscribe({
+      next: (transactions) => {
+        this.apiTransactions = transactions;
+        this.isLoading = false;
+      },
+      error: (error) => {
+        console.error('Error cargando transacciones:', error);
+        this.isLoading = false;
+        if (error.status === 401 || error.status === 403) {
+          console.log('Usuario no autenticado, usando datos de fallback');
+        }
+        // Si falla la API, usar datos de fallback
+      }
+    });
+  }
+
+  // Convertir datos de API al formato que espera el template
+  get transactions() {
+    if (this.apiTransactions.length > 0) {
+      return this.apiTransactions.map(t => ({
+        product: t.category || t.description,
+        price: `S/ ${t.amount}`,
+        details: t.description || "Ninguno"
+      }));
+    }
+    return this.fallbackTransactions;
+  }
 
   get filteredTransactions() {
     const start = (this.currentPage - 1) * this.rowsPerPage;

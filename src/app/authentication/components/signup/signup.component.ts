@@ -10,7 +10,7 @@ import {MatIcon} from "@angular/material/icon";
 import {MatInput} from "@angular/material/input";
 import {MatButton} from "@angular/material/button";
 import {MatToolbar} from "@angular/material/toolbar";
-import {ToolbarComponent} from "../../../../shared/components/toolbar/toolbar.component";
+import { ToolbarComponent } from '../../../../shared/components/toolbar/toolbar.component';
 import {MatOption, MatSelect} from "@angular/material/select";
 
 @Component({

@@ -63,14 +63,19 @@ export class LoginComponent {
 
     this.authService.loginUser({ username, password }).subscribe({
       next: (response) => {
-        console.log('Respuesta del servidor:', response);
-        sessionStorage.setItem('token', response.token);
-        sessionStorage.setItem('username', response.username);
+        console.log('Login exitoso:', response);
+        alert(`¡Bienvenido ${response.username}!`);
         this.router.navigate(['/home']);
       },
       error: (error) => {
         console.error('Error al iniciar sesión:', error);
-        alert('Credenciales inválidas. Intenta de nuevo.');
+        if (error.status === 404) {
+          alert('Usuario no encontrado. Verifica tus credenciales.');
+        } else if (error.status === 401) {
+          alert('Credenciales inválidas. Intenta de nuevo.');
+        } else {
+          alert('Error del servidor. Intenta más tarde.');
+        }
       }
     });
   }
