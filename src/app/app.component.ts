@@ -11,9 +11,7 @@ import { ToolbarComponent } from "../shared/components/toolbar/toolbar.component
   standalone: true,
 
   imports: [
-    RouterOutlet,
-    MatToolbar,
-    ToolbarComponent
+    RouterOutlet
   ],
 
 

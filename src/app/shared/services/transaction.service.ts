@@ -26,7 +26,7 @@ export class TransactionService {
     if (!userId) {
       throw new Error('Usuario no autenticado');
     }
-    
+
     const transactionWithUser = { ...transaction, userId };
     return this.http.post<UserTransaction>(`${this.baseUrl}/user-transactions`, transactionWithUser);
   }
@@ -34,10 +34,11 @@ export class TransactionService {
   // Obtener transacciones del usuario autenticado
   getUserTransactions(): Observable<UserTransaction[]> {
     const userId = this.authService.getCurrentUserId();
+    console.log(userId);
     if (!userId) {
       throw new Error('Usuario no autenticado');
     }
-    
+
     return this.http.get<UserTransaction[]>(`${this.baseUrl}/user-transactions/${userId}`);
   }
 }

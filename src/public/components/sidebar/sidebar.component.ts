@@ -8,7 +8,6 @@ import {LanguageSwitcherComponent} from "../language-switcher/language-switcher.
   selector: 'app-sidebar',
   standalone: true,
     imports: [
-        LanguageSwitcherComponent,
         MatToolbar,
         RouterLink
     ],

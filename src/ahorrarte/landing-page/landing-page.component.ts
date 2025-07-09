@@ -6,7 +6,6 @@ import {SidebarComponent} from "../../public/components/sidebar/sidebar.componen
   selector: 'app-landing-page',
   standalone: true,
   imports: [
-    NgOptimizedImage,
     NgForOf,
     RouterLink,
     SidebarComponent
